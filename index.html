@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adidas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="./img/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">What's new</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Stepping into the Future:<br><span>Adidas Yeezy 350</span></h2>
+                <p>"The Epitome of Style and Innovation"</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="./img/photomain.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><a href="#"><img src="./img/img11.png" onclick="imgSlider('./img/img11.png'); changeCircleColor('#017143') " ></a></li>
+            <li><a href="#"><img src="./img/img22.png" onclick="imgSlider('./img/img22.png'); changeCircleColor('#eb7495') " ></a></li>
+            <li><a href="#"><img src="./img/img33.png" onclick="imgSlider('./img/img33.png'); changeCircleColor('#d752b1') " ></a></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="./img/facebook.png"></a></li>
+            <li><a href="#"><img src="./img/twitter.png"></a></li>
+            <li><a href="#"><img src="./img/instagram.png"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+    </script>
+</body>
+</html>
